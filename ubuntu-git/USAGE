@@ -1,0 +1,37 @@
+# to run the ubuntu-git image from the command line in background mode:
+
+vagrant@vagrant-ubuntu-trusty-64:~$ docker run -itd --name ubuntu-git --hostname ubuntu-git keithroberts/ubuntu-git
+9b357fcb7a905761a0923fc8d811d13eb54b2f3874441f3c1c8a54a2d445e016
+vagrant@vagrant-ubuntu-trusty-64:~$ 
+vagrant@vagrant-ubuntu-trusty-64:~$ docker exec -it ubuntu-git /bin/bash
+root@ubuntu-git:/# 
+root@ubuntu-git:/# ps -ef
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 15:02 ?        00:00:00 /bin/bash
+root        14     0  0 15:02 ?        00:00:00 /bin/bash
+root        28    14  0 15:02 ?        00:00:00 ps -ef
+root@ubuntu-git:/# 
+root@ubuntu-git:/# date
+Thu Jul 14 15:03:16 BST 2016
+root@ubuntu-git:/# 
+root@ubuntu-git:/# cat /etc/timezone
+Europe/London
+root@ubuntu-git:/# 
+root@ubuntu-git:/# cat /etc/hosts
+127.0.0.1	localhost
+::1	localhost ip6-localhost ip6-loopback
+fe00::0	ip6-localnet
+ff00::0	ip6-mcastprefix
+ff02::1	ip6-allnodes
+ff02::2	ip6-allrouters
+172.17.0.5	ubuntu-git
+root@ubuntu-git:/# 
+root@ubuntu-git:/# git version
+git version 2.7.4
+root@ubuntu-git:/# 
+root@ubuntu-git:/# git
+git                 git-receive-pack    git-shell           git-upload-archive  git-upload-pack     
+root@ubuntu-git:/#    
+root@ubuntu-git:/# ssh
+ssh          ssh-add      ssh-agent    ssh-argv0    ssh-copy-id  ssh-keygen   ssh-keyscan  
+root@ubuntu-git:/# 

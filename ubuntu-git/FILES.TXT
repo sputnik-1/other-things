@@ -1,0 +1,6 @@
+
+├── build-image.sh - bash script to build a docker image
+├── BUILD-NOTES    - output of building the above image in a vagrant VM
+├── Dockerfile     - docker build file
+├── FILES.TXT      - this file
+└── USAGE          - running the docker image in a vagrant VM
