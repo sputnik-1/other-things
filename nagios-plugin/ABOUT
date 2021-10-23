@@ -1,0 +1,4 @@
+This is a Nagios plugin I wrote to monitor that an API daemon was still up and running.
+When the daemon was running it wrote regularly to a log file.
+This Nagios plugin searches backwards from the end of the log file to check an API daemon 
+is still writing it's output to the log file - which indicates the service is still working OK.
