@@ -1,8 +1,8 @@
+# Centos5-5.ks kickstart file.                                                        
+#
 # An example kickstart file written for Centos 5.5
 #
 # The anaconda installer used with Centos does not like the %end tag, to end a section.
-#
-# Centos5-5.ks kickstart file.                                                        
                                                                                       
 # Perform an installation from CD-ROM or DVD.
 install                                                                               
